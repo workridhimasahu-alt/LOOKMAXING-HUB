@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glow-Up Guide – Locked</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <style>
+    :root{--bg:#121212;--card:#1e1e1e;--text:#ffffff;--border:#333333}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,Arial,sans-serif}
+    body{background:url("img 1.jpg") center/cover fixed;color:var(--text)}
+    .section{
+      width:100%;max-width:800px;margin:60px 350px;padding:clamp(30px,4vw,50px);
+      background:rgba(255,255,255,.05);border-radius:16px;backdrop-filter:blur(15px);
+    }
+    h2{font-size:clamp(24px,3.5vw,36px);text-align:center;margin-bottom:25px}
+    .pdf-row{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:12px 20px;margin:8px 0;border:1px solid var(--border);border-radius:8px;
+      background:#222222;
+    }
+    .pdf-name{font-weight:600}
+    .lock{font-size:20px;color:#888888}
+    .lock.open{color:#4caf50}
+    .scanner-img{width:100%;max-width:300px;border-radius:8px;margin:0 auto 20px;display:block}
+    input{width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;background:#0e0e0e;color:#ffffff;margin-bottom:15px}
+    button{width:100%;padding:14px;border:none;border-radius:8px;background:#444444;color:#ffffff;font-size:16px;cursor:pointer;transition:.3s}
+    button:hover{background:#555555}
+    .hidden{display:none}
+    .pay-text{text-align:center;color:#cccccc;margin-bottom:20px}
+  </style>
+</head>
+
+<body>
+  <nav style="position:fixed;top:0;left:0;right:0;display:flex;justify-content:center;gap:50px;padding:15px 0;background:rgba(255,255,255,.05);backdrop-filter:blur(12px);z-index:1000;">
+    <a href="index.html" style="color:#fff;text-decoration:none;font-weight:600">Glow-up basics</a>
+    
+    <a href="advanceguide.html" style="color:#fff;text-decoration:none;font-weight:600">Advance Guide</a>
+    <a href="Guides.html" style="color:#fff;text-decoration:none;font-weight:600">Personal Guidence</a>
+    <a href="contact.html" style="color:#fff;text-decoration:none;font-weight:600">Contact</a>
+  </nav>
+
+  <section class="section" style="margin-top:100px ;margin-left:300px">
+    <h2>Advance guide </h2>
+
+    
+    
+    <button onclick="window.location.href='contact.html';">
+  Unlock (299/-)
+</button>
+
+    <!-- LIST OF PDFS -->
+    <div id="pdfList">
+      <div class="pdf-row">
+        <span class="pdf-name">Hunter Eyes </span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Nose Guide </span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Jawline Training</span>
+        <span class="lock">🔒</span>
+      </div>
+      
+      <div class="pdf-row">
+        <span class="pdf-name">Face muscle Training</span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Face Debloat</span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Eyebrow Grooming </span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Neck Hyoid Training</span>
+        <span class="lock">🔒</span>
+      </div>
+      
+      <div class="pdf-row">
+        <span class="pdf-name">Skinny-Fat to Aesthetic</span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Height Boost Blueprint</span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Posture Optimisation Guide</span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">3-min Face Sculpting</span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Hollow Cheeks</span>
+        <span class="lock">🔒</span>
+      </div>
+      <div class="pdf-row">
+        <span class="pdf-name">Tanning</span>
+        <span class="lock">🔒</span>
+      </div>
+
+    </div>
+
+   
+
+  <script>
+    function unlock(){
+      const code = document.getElementById('receipt').value.trim();
+      if(code){
+        document.getElementById('pdfList').style.display='none';
+        document.getElementById('unlocked').classList.remove('hidden');
+      }else{
+        alert('Please paste your UTR or screenshot URL.');
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

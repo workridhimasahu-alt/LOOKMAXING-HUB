@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Coaching – Pragy Gurjar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{--accent:#000000;--bg:#1e1e2f;--glass:rgba(42,42,64,.55);--text:#f5f5f5;--radius:16px}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,Arial,sans-serif}
+    html,body{height:100%;scroll-behavior:smooth}
+    body{
+      background:url("img 1.jpg") center/cover fixed;
+      display:flex;flex-direction:column;align-items:center;color:var(--text);
+    }
+    nav{
+      position:fixed;top:0;left:0;right:0;
+      display:flex;justify-content:center;gap:50px;
+      padding:15px 0;background:var(--glass);backdrop-filter:blur(12px);z-index:1000;
+    }
+    nav a{color:var(--text);text-decoration:none;font-weight:600;transition:.3s}
+    nav a:hover{color:var(--accent)}
+    header{
+      height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      text-align:center;padding:0 20px;
+    }
+    header h1{font-size:clamp(36px,5vw,60px);font-weight:300;letter-spacing:2px}
+    header p{font-size:clamp(16px,2vw,22px);color:#ccc;margin:10px 0 40px}
+    .section{
+      width:100%;max-width:1100px;margin:80px 20px;padding:clamp(30px,4vw,50px);
+      background:var(--glass);border-radius:var(--radius);backdrop-filter:blur(15px);
+    }
+    .section h2{font-size:clamp(24px,3.5vw,36px);text-align:center;margin-bottom:25px}
+    /* pricing table */
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:12px;border-bottom:1px solid rgba(255,255,255,.2);text-align:center}
+    th{background:rgba(255,255,255,.1);font-weight:600}
+    /* scanner image */
+    .scanner-img{width:100%;max-width:400px;border-radius:var(--radius);margin:20px auto;display:block}
+    /* formspree form */
+    form{display:flex;flex-direction:column;gap:15px}
+    input,textarea{
+      padding:14px;border:none;border-radius:var(--radius);background:rgba(0, 0, 0, 0.07);
+      color:#fff;font-size:16px;outline:none;
+    }
+    input::placeholder,textarea::placeholder{color:#bbb}
+    button{
+      padding:16px;border:none;border-radius:var(--radius);
+      background:linear-gradient(135deg,var(--accent),#000000);color:#fff;
+      font-size:17px;font-weight:600;cursor:pointer;transition:.3s;
+    }
+    button:hover{transform:scale(1.05)}
+    .free-btn{
+      background:linear-gradient(135deg,#000000,#000000) , color(srgb rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0));
+    }
+    .hidden{display:none}
+    @media(max-width:600px){table{font-size:14px}}
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav>
+     
+    <a href="index.html" style="color:#fff;text-decoration:none;font-weight:600">Glow-up basics</a>
+    
+    <a href="advanceguide.html" style="color:#fff;text-decoration:none;font-weight:600">Advance Guide</a>
+    <a href="Guides.html" style="color:#fff;text-decoration:none;font-weight:600">Personal Guidence</a>
+    <a href="contact.html" style="color:#fff;text-decoration:none;font-weight:600">Contact</a>
+      
+  </nav>
+
+  
+
+  <!-- HERO -->
+  <header>
+    <h1>Personal Coaching</h1>
+    <p>Unlock your glow-up with Pragy Gurjar</p>
+  </header>
+
+  <!-- PRICING TABLE -->
+  <section id="plans" class="section">
+    <h2>Choose Your Plan </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price (INR/month)</th>
+          <th>For</th>
+          
+          <th>Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>₹ 999</td>
+          <td>Students/Beginners</td>
+          
+          <td> Personalized diet + workout + Face guide </td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>₹ 1499</td>
+          <td>intermediate</td>
+           
+          <td>  Personalized diet + workout +  Face guidance +daily query (text only) + weekly progress tracking</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>₹ 2400</td>
+          <td>serious transformation</td>
+          
+          <td>  Personalized diet + workout +  Face guidance +daily query (text + voicecall) + weekly progress tracking + video call [1-2 per week] </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- FREE GLOW-UP BASICS -->
+   
+    <tr > <a class="btn free-btn" href="glowup.html" download><p style="color: #fff6f6; font-size:25px;">
+      🔓 Get Glow-Up Basics (FREE) With All Plans </p>
+    </a></tr>
+
+  </section>
+  
+ 
+
+  <script>
+    /* simple unlock logic */
+    function unlockFull() { document.getElementById('unlock').classList.remove('hidden'); }
+    function verify() {
+      if (document.getElementById('receipt').value.trim()) {
+        alert('✅ Access granted! Redirecting to full downloads…');
+        window.location.href = '#';  // link your full pack here
+      } else alert('Please paste your receipt / UTR.');
+    }
+  </script>
+</body>
+</html>
